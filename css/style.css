@@ -147,8 +147,8 @@ nav {
 .marquee-title { 
     font-size: 0.7rem; text-transform: uppercase; letter-spacing: 5px; 
     color: var(--primary-text); opacity: 0.3; text-align: center; 
-    margin-bottom: 2rem; font-weight: 800; display: block; 
-    padding: 0 20px;
+    margin: 0 auto 2rem !important; font-weight: 800; display: block !important; 
+    width: 100% !important; padding: 0 20px;
 }
 .marquee-container { display: flex; width: 200%; }
 .marquee-content { display: flex; justify-content: space-around; min-width: 100%; animation: scroll 40s linear infinite; gap: 4rem; padding: 0 2rem; }
@@ -324,13 +324,17 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
     .form-grid { gap: 2.5rem; }
     .form-control { font-size: 1.1rem; padding: 20px 0; }
     select.form-control { 
-        height: 70px !important; 
+        display: block !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        height: 75px !important; 
         font-size: 1.1rem !important;
-        background-color: rgba(255,255,255,0.1) !important; 
-        padding: 0 15px !important; 
+        background-color: rgba(255,255,255,0.12) !important; 
+        padding: 0 45px 0 20px !important; 
         border-radius: 12px !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
         border-bottom: 2px solid var(--accent-gold) !important;
-        display: flex; align-items: center;
+        line-height: normal !important;
     }
     .form-submit { margin-top: 2rem; }
 }
