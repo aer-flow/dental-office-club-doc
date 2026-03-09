@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(window.matchMedia("(pointer: fine)").matches && cursor) {
         const cursorLabel = document.createElement('div');
         cursorLabel.className = 'cursor-label';
-        cursorLabel.innerText = 'Vezi Detalii';
+        cursorLabel.innerText = 'Află mai multe';
         document.body.appendChild(cursorLabel);
 
         window.addEventListener('mousemove', (e) => {
