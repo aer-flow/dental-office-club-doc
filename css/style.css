@@ -142,13 +142,12 @@ nav {
 .marquee-section {
     padding: 3rem 0; background: var(--surface-light); overflow: hidden;
     border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); 
-    display: flex; flex-direction: column; align-items: center;
 }
 .marquee-title { 
     font-size: 0.7rem; text-transform: uppercase; letter-spacing: 5px; 
     color: var(--primary-text); opacity: 0.3; text-align: center; 
-    margin: 0 auto 2rem !important; font-weight: 800; display: block !important; 
-    width: 100% !important; padding: 0 20px;
+    margin-bottom: 2rem; font-weight: 800; display: block; 
+    padding: 0 5%;
 }
 .marquee-container { display: flex; width: 200%; }
 .marquee-content { display: flex; justify-content: space-around; min-width: 100%; animation: scroll 40s linear infinite; gap: 4rem; padding: 0 2rem; }
@@ -321,8 +320,8 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
     .section-padding { padding: 6rem 5%; }
     .wa-float { bottom: 20px; right: 20px; width: 60px; height: 60px; font-size: 1.8rem; }
     .booking-container { padding: 3rem 1.5rem; border-radius: 24px; }
-    .form-grid { gap: 2.5rem; }
-    .form-control { font-size: 1.1rem; padding: 20px 0; }
+    .form-group { width: 100% !important; }
+    .form-control { font-size: 1.1rem; padding: 20px 0; width: 100% !important; }
     select.form-control { 
         display: block !important;
         width: 100% !important;
@@ -334,7 +333,8 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
         border-radius: 12px !important;
         border: 1px solid rgba(255,255,255,0.1) !important;
         border-bottom: 2px solid var(--accent-gold) !important;
-        line-height: normal !important;
+        line-height: 75px !important;
+        box-sizing: border-box !important;
     }
     .form-submit { margin-top: 2rem; }
 }
