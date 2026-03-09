@@ -143,7 +143,7 @@ nav {
     padding: 3rem 0; background: var(--surface-light); overflow: hidden;
     border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); 
 }
-.marquee-title { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 5px; color: var(--primary-text); opacity: 0.3; text-align: center; margin-bottom: 2rem; font-weight: 800; }
+.marquee-title { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 5px; color: var(--primary-text); opacity: 0.3; text-align: center; margin-bottom: 2rem; font-weight: 800; display: block; width: 100%; padding: 0 5%; }
 .marquee-container { display: flex; width: 200%; }
 .marquee-content { display: flex; justify-content: space-around; min-width: 100%; animation: scroll 40s linear infinite; gap: 4rem; padding: 0 2rem; }
 .marquee-content span { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 400; color: var(--primary-text); opacity: 0.7; letter-spacing: 2px; font-style: italic; white-space: nowrap; flex-shrink: 0; }
