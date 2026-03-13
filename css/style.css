@@ -107,9 +107,13 @@ nav {
     border: 1px solid var(--glass-border); border-radius: 100px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
-.logo { display: flex; align-items: center; }
-.nav-logo-img { height: 60px; width: auto; transition: var(--transition-smooth); filter: brightness(1.05); }
+.logo { display: flex; align-items: center; gap: 1.5rem; }
+.nav-logo-img { height: 50px; width: auto; transition: var(--transition-smooth); filter: brightness(1.05); }
 .logo:hover .nav-logo-img { transform: scale(1.05); }
+
+.logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+.logo-title { font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: var(--primary-text); }
+.logo-subtitle { font-family: var(--font-body); font-size: 0.5rem; letter-spacing: 3px; color: var(--accent-gold); text-transform: uppercase; margin-top: 4px; font-weight: 700; }
 
 .nav-links { display: flex; gap: 3.5rem; align-items: center; }
 .nav-links a.nav-item { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; position: relative; opacity: 0.8; }
@@ -314,6 +318,10 @@ footer { background: var(--primary-bg); padding: 8rem 5% 4rem; border-top: 1px s
     nav { width: calc(100% - 2rem); top: 1rem; }
 }
 @media (max-width: 768px) {
+    .nav-logo-img { height: 40px; }
+    .logo-title { font-size: 1.1rem; }
+    .logo-subtitle { font-size: 0.45rem; letter-spacing: 2px; }
+    .logo { gap: 1rem; }
     .nav-links { display: none; }
     .bento-grid { grid-template-columns: 1fr; grid-auto-rows: 300px; }
     .item-large, .item-wide, .item-box { grid-column: span 1; grid-row: span 1; }
